@@ -1,0 +1,42 @@
+
+  
+  .connect-wallet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .rectangles-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 20px 20px;
+    gap:60px;
+    margin-top: 100px;
+  }
+  
+  .wallet-rectangle {
+    width: 191px;
+    height: 174px;
+    background-color: #E6E9F2; 
+    color: black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 19px; 
+
+    transition: background-color 0.3s ease;
+  }
+  
+  .wallet-rectangle:hover {
+    opacity: 0.8; 
+  }
+  
+
+  

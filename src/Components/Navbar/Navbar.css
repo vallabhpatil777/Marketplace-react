@@ -1,0 +1,320 @@
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: white;
+  color: rgb(16, 15, 15);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38.73px;
+  color: black;
+  object-fit: contain;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.connect-wallet {
+  background-color: white;
+  color: rgb(36, 35, 35);
+  border: 1px solid black;
+  padding: 12px 24px;
+  border-radius: 87px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  max-width: 180px;
+  margin-top: 5px;
+}
+
+.connect-wallet:hover {
+  background-color: rgb(48, 46, 46);
+  color: white;
+}
+
+
+.account-panel-card {
+  position: absolute;
+  top: 10px; 
+  right: 0; 
+  width: 450px;
+  height: 930px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 21px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-right: 15px;
+  z-index: 1100;
+  overflow-y: auto;
+}
+
+
+.account-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.account-panel-image-left.account-panel-image-right {
+  width: 223px;
+  height: 50px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+.account-panel-image-right {
+  width: 30px; 
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.account-balance p {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.account-balance {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 100px;
+  padding-left: 10px;
+}
+
+.span-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7B7B7B;
+  margin-bottom: 5px;
+}
+
+
+.nft-title-text  {
+
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 100px;
+  line-height: 29.05px;
+  padding-left: 20px;
+}
+
+
+.nft-container {
+  margin-top: 30px;
+}
+
+
+
+.nft-image {
+
+  width: 391px;
+  height: 227px;
+  object-fit: fill;
+  border-radius: 47px;
+  margin-bottom: 10px;
+}
+
+.no-nfts {
+  color:var(--gay-2, #617587);
+
+  font-size: 24px;
+  margin-top: 100px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.start-shopping-button {
+  margin-top: 100px;
+  margin-left: 90px;
+  display: block;
+  width: 248px;
+  height: 67px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 87px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.start-shopping-button:hover {
+  background-color: black;
+}
+
+.account-box {
+
+  display: flex;
+  align-items: row;
+}
+
+
+.long-back-button {
+  position: absolute;
+  left: 1235px;
+  top: 20px;
+  height: 920px; 
+  width: 40px; 
+  background: #D4D4D43B;
+
+  border: none;
+  border-radius: 13px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items:top ;
+  justify-content: center; 
+  backdrop-filter: blur(16px);
+  padding-top: 15px;
+  padding-right: 10px;
+
+}
+
+.long-back-button::before {
+  content: ">>"; 
+  font-size: 12px;
+  color: black; 
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  .navbar-left {
+    flex: 0;
+  }
+
+  .navbar-logo {
+    font-size: 24px;
+    padding-left: 10px;
+  }
+
+  .navbar-right {
+    flex: 0;
+    padding-right: 10px;
+  }
+
+  .connect-wallet {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .account-panel-card {
+    width: 90%;
+    height: auto;
+    right: 5%;
+    top: calc(100% + 5px);
+  }
+
+
+
+  .account-panel-image-left {
+    width: 150px;
+    height: 40px;
+  }
+
+  .account-panel-image-right {
+    width: 25px;
+    height: 25px;
+  }
+
+  .account-balance {
+    margin-top: 50px;
+    padding-left: 10px;
+  }
+
+  .nft-title-text {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .nft-container {
+    margin-top: 20px;
+  }
+
+  .nft-image {
+    width: 100%;
+    height: auto;
+    border-radius: 47px;
+  }
+
+  .no-nfts {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+
+  .start-shopping-button {
+    width: 200px;
+    height: 55px;
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 12px;
+  }
+
+  .account-box {
+    flex-direction: column;
+  }
+
+  .long-back-button {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    height: 60px;
+    width: 40px;
+    background: #D4D4D43B;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
+  .long-back-button::before {
+    content: ">>";
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: black;
+  }
+}
